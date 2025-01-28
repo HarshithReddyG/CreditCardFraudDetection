@@ -1,0 +1,43 @@
+Loading dataset from ../Data/fraudTrain.csv...
+First few rows of the dataset:
+   Unnamed: 0 trans_date_trans_time            cc_num                            merchant  ...   unix_time  merch_lat  merch_long is_fraud
+0           0   2019-01-01 00:00:18  2703186189652095          fraud_Rippin, Kub and Mann  ...  1325376018  36.011293  -82.048315        0
+1           1   2019-01-01 00:00:44      630423337322     fraud_Heller, Gutmann and Zieme  ...  1325376044  49.159047 -118.186462        0
+2           2   2019-01-01 00:00:51    38859492057661                fraud_Lind-Buckridge  ...  1325376051  43.150704 -112.154481        0
+3           3   2019-01-01 00:01:16  3534093764340240  fraud_Kutch, Hermiston and Farrell  ...  1325376076  47.034331 -112.561071        0
+4           4   2019-01-01 00:03:06   375534208663984                 fraud_Keeling-Crist  ...  1325376186  38.674999  -78.632459        0
+
+[5 rows x 23 columns]
+Loading dataset from ../Data/fraudTest.csv...
+First few rows of the dataset:
+   Unnamed: 0 trans_date_trans_time            cc_num                              merchant  ...   unix_time  merch_lat  merch_long is_fraud
+0           0   2020-06-21 12:14:25  2291163933867244                 fraud_Kirlin and Sons  ...  1371816865  33.986391  -81.200714        0
+1           1   2020-06-21 12:14:33  3573030041201292                  fraud_Sporer-Keebler  ...  1371816873  39.450498 -109.960431        0
+2           2   2020-06-21 12:14:53  3598215285024754  fraud_Swaniawski, Nitzsche and Welch  ...  1371816893  40.495810  -74.196111        0
+3           3   2020-06-21 12:15:15  3591919803438423                     fraud_Haley Group  ...  1371816915  28.812398  -80.883061        0
+4           4   2020-06-21 12:15:17  3526826139003047                 fraud_Johnston-Casper  ...  1371816917  44.959148  -85.884734        0
+
+[5 rows x 23 columns]
+Train data shape: (1296675, 23)
+Test data shape: (555719, 23)
+Shape of X_train_raw: (1296675, 22)
+Shape of X_test_raw: (555719, 22)
+Shape of y_train: (1296675,)
+Shape of y_test: (555719,)
+Training data preprocessing completed.
+Preprocessed training data saved to ../Data/train_preprocessed.pkl
+Test data preprocessing completed.
+Preprocessed test data saved to ../Data/test_preprocessed.pkl
+SMOTE completed
+ADASYN completed
+SMOTE dataset saved to ../Data/SMOTE_resampled.pkl
+ADASYN dataset saved to ../Data/ADASYN_resampled.pkl
+is_fraud
+0    1289169
+1    1289169
+Name: count, dtype: int64
+is_fraud
+1    1289977
+0    1289169
+Name: count, dtype: int64
+Data preprocessing completed. Datasets are saved for model training.

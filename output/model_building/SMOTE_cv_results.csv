@@ -1,0 +1,11 @@
+Model,F1 Score
+logistic_regression,0.7897990997828475
+logistic_regression,0.7897283288058051
+logistic_regression,0.7899567160365232
+logistic_regression,0.7898493166686135
+logistic_regression,0.789420992133268
+decision_tree,0.9978638939933164
+decision_tree,0.9980093234219478
+decision_tree,0.9978660847015135
+decision_tree,0.9981042470294055
+decision_tree,0.9979647297354924
